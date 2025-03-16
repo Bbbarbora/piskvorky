@@ -1,3 +1,58 @@
-* {
+*,
+body {
     box-sizing: border-box;
+    color: #fff;
+}
+html{
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(#615dad,#ffc8da);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    
+}
+
+.game-block {
+    width: 50%;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #283e50;
+    border-radius: 20px 20px 0 0;
+}
+
+.game-block__intro {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.game-block__description {
+    font-size: 1.2rem;
+}
+
+.game-block__img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.game-block__title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+/* styly pre tlacitka */
+
+.game-block__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-block__button {
+    text-decoration: none;
+    height: 40px;
+
 }
