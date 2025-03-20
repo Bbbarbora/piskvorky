@@ -9,17 +9,21 @@ html{
 }
 
 body {
-    background-image: linear-gradient(#615dad,#ffc8da);
-    /* toto je druha mozsnost, aby sa pozadie neopakovalo a pokryvalo celu plochu
-     background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #615dad,#ffc8da);
+    font-family:"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    
+
+    /* toto je druha moznost, aby sa pozadie neopakovalo a pokryvalo celu plochu
+    background-repeat: no-repeat;
     height: 100%;
-    background-attachment: fixed; */
+    background-attachment: fixed;  */
     
 }
 
 .game-block {
-    width: 50%;
-    margin: 200px auto;
+    max-width: 630px;
+    margin: 18rem auto;
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     background-color: #283e50;
@@ -27,22 +31,26 @@ body {
 }
 
 .game-block__intro {
-    padding: 10px 30px;
+    padding: 2rem 3rem;
     text-align: center;
 }
 
 .game-block__description {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    
+
 }
 
 .game-block__img{
     max-width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .game-block__title {
-    text-align: center;
+    font-family: 'Lobster';
     font-size: 3rem;
+    text-align: center;
 }
 
 
@@ -51,10 +59,44 @@ body {
 .game-block__nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 2px;
 }
 
 .game-block__button {
     text-decoration: none;
-    height: 40px;
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 1.55rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+
+a.game-block__button{
+    width: 100%;
+}
+
+.game-block__button:hover {
+    transition: all 0.3s ease-in-out
+}
+
+.game-block__button--rules{
+    background-color: #1fcca4;
+}
+
+.game-block__button--rules:hover {
+    background-color:#1cbb96;
+    
+}
+
+.game-block__button--play {
+    background-color: #0197f6;
+}
+
+.game-block__button--play:hover{
+    background-color: #0090e9;
+    
 }
