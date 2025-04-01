@@ -55,14 +55,15 @@ body {
     border-radius: 20px 20px 0 0;
 }
 
-.game-block__title {
+.game-block__title,
+.game-board__title {
     font-family: 'Lobster';
     font-size: 3rem;
     text-align: center;
 }
 
 
-/* styly pre tlacitka */
+/* styly pre tlacitka na uvodnej stranke */
 
 .game-block__nav {
     display: flex;
@@ -87,7 +88,7 @@ a.game-block__button{
     width: 100%;
 }
 
-/* specialne styly pre konkretne tlacitka */
+/* specialne styly pre konkretne tlacitka na uvodnej stranke*/
 
 .game-block__button:hover {
     transition: all 0.3s ease-in-out
@@ -110,3 +111,81 @@ a.game-block__button{
     background-color: #0090e9;
     
 }
+
+
+/* ---------------------------------------------
+/* styly pre sekciu hracej plochy */
+/*--------------------------------------------- */
+
+
+
+.game-board {
+    max-width: 80vmin;
+    margin: 0 auto;
+}
+
+.game-board__title {
+    font-size: 3.5rem;
+}
+
+/* styly pre info panel */
+
+.game-board__panel-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2rem;
+}
+
+
+.game-board__status {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+.game-board__player {
+    text-transform: uppercase;
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 0 1.2rem 0 0;
+}
+
+/* Styly pre ovladaci panel   */
+
+
+.game-board__controls {
+    display: flex;
+}
+
+.game-board__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 3.125rem;
+    padding-left: 1.2rem;
+
+}
+
+
+
+/* Hracia plocha  - styly pre samotnu plochu */
+
+.game-board__grid {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    background-image: linear-gradient(to bottom, #8a7fc7, #f8d1e3);
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+
+}
+
+.game-board__cell {
+    border: 1px solid black;
+    background-color: transparent;
+    
+}
+
