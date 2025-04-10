@@ -230,3 +230,11 @@ transition: all 0.3s ease-in-out;
     mix-blend-mode: hard-light;
 }
 
+.board__field--circle{
+    background: url(/pictures/circle-black.svg) center / 80% 80% no-repeat;
+}
+
+.board__field--cross{
+    background: url(/pictures/cross-black.svg) center / 80% 80% no-repeat;
+    color: black;
+}
