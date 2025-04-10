@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reenie+Beanie&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Hra</title>
+    <script type="module" src="hra.js"></script>
+    <title>Game</title>
 </head>
 <body>
     <!-- Sekcia hracej stranky -->
@@ -27,7 +28,7 @@
                         <img src="pictures/home.svg" alt="Home">
                     </div>
                 </a>
-                <a href="#" class="game-board__button game-board__button--restart">
+                <a href="/hra.html" class="game-board__button game-board__button--restart">
                     <div class="game-board__icon">
                         <img src="pictures/restart.svg" alt="Restart">
                     </div>
@@ -37,8 +38,8 @@
 
     <!-- Hracia plocha -->
         <div class="game-board__grid">
-            <button class="game-board__cell board__field--circle"></button>
-            <button class="game-board__cell board__field--cross"></button>
+            <button class="game-board__cell"></button>
+            <button class="game-board__cell "></button>
             <button class="game-board__cell"></button>
             <button class="game-board__cell"></button>
             <button class="game-board__cell"></button>
