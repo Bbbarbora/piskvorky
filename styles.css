@@ -228,7 +228,12 @@ transition: all 0.3s ease-in-out;
     outline: none;
     background-color: rgba(255, 255, 255, 0.3);
     mix-blend-mode: hard-light;
+    cursor: pointer;
 }
+
+
+/* Vytvorenie tried pre hracov */
+
 
 .board__field--circle{
     background: url(/pictures/circle-black.svg) center / 80% 80% no-repeat;
@@ -237,4 +242,24 @@ transition: all 0.3s ease-in-out;
 .board__field--cross{
     background: url(/pictures/cross-black.svg) center / 80% 80% no-repeat;
     color: black;
+}
+
+
+/* Vytvorenie animacie pre hru */
+
+@keyframes scaleIn {
+    0% {
+      transform: scale(0.2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+.board__field--circle,
+.board__field--cross {
+  animation: scaleIn 0.15s ease-out;
+  transform-origin: center;
 }
