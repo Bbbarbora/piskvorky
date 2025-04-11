@@ -36,11 +36,11 @@ playingCells.forEach((cell) => {
         //zmena hraca na hornej ikone - pridam podmienku- ak klikne= zahra hrac s kruhom, tak sa zmeni aktualny hrac na kriz a opacne
         if (currentPlayer === 'circle') {
             currentPlayer = 'cross';
-            player.src = "/pictures/cross.svg";
+            player.src = "pictures/cross.svg";
 
         } else if (currentPlayer === 'cross') {
             currentPlayer = 'circle';
-            player.src = "/pictures/circle.svg";
+            player.src = "pictures/circle.svg";
         }
         console.log(currentPlayer);
     })
