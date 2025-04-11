@@ -55,5 +55,5 @@ restartBtn.addEventListener("click", (e) => {
     } else {
         e.preventDefault()
     }
-}); 8
+});
 
